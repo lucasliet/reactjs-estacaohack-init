@@ -4,3 +4,11 @@ vscode:
     - PKief.material-icon-theme@4.4.0:rUeW9VprKCFBXYTvg+AimA==
     - CoenraadS.bracket-pair-colorizer-2@0.2.0:R8flOpw1fEZe6KyMNNNqBQ==
     - naumovs.color-highlight@2.3.0:6nKORbxgnWjNaN6xACiaQQ==
+
+ports:
+- port: 3000
+  onOpen: open-preview
+
+tasks:
+  - init: yarn install
+    command: yarn start
